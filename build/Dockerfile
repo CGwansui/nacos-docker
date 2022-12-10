@@ -48,7 +48,7 @@ RUN mkdir -p logs \
 	&& touch start.out \
 	&& ln -sf /dev/stdout start.out \
 	&& ln -sf /dev/stderr start.out \
-	&&chmod +x bin/docker-startup.sh
+	&&chmod +x ../bin/docker-startup.sh
 
 EXPOSE 8848
 ENTRYPOINT ["bin/docker-startup.sh"]
